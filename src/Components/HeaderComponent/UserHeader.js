@@ -32,7 +32,6 @@ class UserHeader extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
               <div className="navbar-brand">
                 <Link to={'/'} className="linkcolor">
-                    <img alt="logo" src={logo} className="d-inline-block logoimg align-top"/>
                     <span className="cartarvels">Car Travels</span>
                 </Link>
               </div>

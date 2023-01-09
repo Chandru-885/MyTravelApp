@@ -30,36 +30,8 @@ export default class Homepage extends Component {
         super();
         this.state = {GalleryDatas: []}
     }
-    componentDidMount(){
-        fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/adminHomePage')
-        .then(res=>res.json())
-        .then(data=>{
-            this.setState({GalleryDatas: data.data})
-        });
-    }
-
-    render() {
-        console.log(this.state.GalleryDatas)
-        let GalleryList = this.state.GalleryDatas.map((Gallerydata, i)=>{
-            if(i<3){
-                return (
-                <div className="col-12 col-sm-12 col-md-4 col-xl-4">
-                    <Card className="Card_Gallery border-0" key={i}>
-                      <Card.Img variant="top" src={Gallerydata.packageimage} width="340px" height="250px"/>
-                      <Card.Body>
-                          <Card.Title className="text-success cardtitle"><b>{Gallerydata.packagename}</b></Card.Title>
-                          <Card.Text >
-                              <p className="card-text text-primary">{Gallerydata.packagedetails}</p>
-                              <p className="card-text text-info"> Car Type : {Gallerydata.carType}</p>
-                              <p className="card-text text-secondary"> No. of Days : <b>{Gallerydata.noofdays}</b> day package</p>
-                              <p className="card-text"><b>Price @ ₹{Gallerydata.packageprice}</b></p>
-                          </Card.Text>
-                     </Card.Body>
-                    </Card>
-                 </div>
-               );
-            }
-        })
+    
+    render() {       
         return (
             <div className="MainDiv">
                 <Carousel>
@@ -100,12 +72,6 @@ export default class Homepage extends Component {
                       </Link>
                     </div>
                 </div>
-                <Container className="card_main_div">
-                    <p className="tourpackage">Popular Packages</p>   
-                </Container> 
-                <Row className="px-3"> 
-                    {GalleryList}
-                </Row>
                 <p className="Gallery">Gallery</p>
                 <Carousel>
                     <Carousel.Item>

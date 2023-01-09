@@ -97,7 +97,8 @@ function App(props) {
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-xl-4 col-ls">
                         {/* <p>&copy; 2021 Developed by Chandru</p> */}
-                        <p> -- by Chandru</p>
+                        <p><br></br><br></br><br></br></p>
+                        <p className="mt-4 pt-4"> -- by Chandru Lakshmanan</p>
                     </div>
                         
                 </div>

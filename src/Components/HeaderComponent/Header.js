@@ -37,8 +37,8 @@ export default class Header extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <Link to={'/'} className="linkcolor">
               <div className="navbar-brand">
-                    <img alt="logo" src={logo} className="d-inline-block logoimg align-top"/>
-                    <span className="cartarvels">Car Travels</span>
+                 
+                    <span className="cartarvels">A1 Car Travels</span>
               </div>
               </Link>
 

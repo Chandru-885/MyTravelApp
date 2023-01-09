@@ -12,15 +12,6 @@ export default class TourPackage extends Component {
         this.state = {PackageNumberList:[1,2,3], DisplayNoOfDaysList:[],GalleryDatas:[], currentrole : "",searchList:[], displayAll : 1}
     }
 
-    componentDidMount(){
-        fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/adminHomePage',{
-            headers:authHeader()
-        })
-        .then(res=>res.json())
-        .then(data=>{
-            this.setState({GalleryDatas: data.data})
-        });
-    }
 
     addTourBookingDB(Gallerydata){
         var userid  =  AuthService.finduserid();
@@ -84,7 +75,7 @@ export default class TourPackage extends Component {
                             Package
                             </div>
                             <div className="packagecardbody py-5">
-                                <Button className="btn btn-info" onClick={this.displayBasedOnNoofDays.bind(this,Pack_No)}>{Pack_No} day Package</Button>
+                                <Button disabled={true} className="btn btn-info" onClick={this.displayBasedOnNoofDays.bind(this,Pack_No)}>{Pack_No} day Package</Button>
                             </div>
                         </div>
                     </div>
@@ -154,7 +145,7 @@ export default class TourPackage extends Component {
                                 <option value="packageprice"> Low to High Price</option>
                                 <option value="-packageprice"> High to Low Price</option>
                             </select>
-                            <button type="submit" className="btn btn-warning m-2 ml-0" onClick={this.sortfunction.bind(this)}>Search</button>
+                            <button disabled={true} type="submit" className="btn btn-warning m-2 ml-0" onClick={this.sortfunction.bind(this)}>Search</button>
                         </div>
                     </form>
             

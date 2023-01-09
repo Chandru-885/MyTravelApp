@@ -16,15 +16,7 @@ export default class CarDetails extends Component {
             this.state = {Car_km_Details: [], cargallery: [car1,car2,car3,car4,car5,car6], searchList:[], displayAll:true}
         }
     
-        componentDidMount(){
-            fetch('https://cbe10-cartravels-chandru.herokuapp.com/api/v1/CarkilometerDetails',{
-                headers:authHeader()
-            })
-            .then(res=>res.json())
-            .then(data=>{
-                this.setState({Car_km_Details : data})
-            });
-        }
+
     
         render() {
                 var FetchedData = this.state.Car_km_Details.map((Car_km_Detail, i)=>{
