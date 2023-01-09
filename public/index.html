@@ -26,7 +26,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>CBE10cartravels</title>
+    <title>A1cartravels</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,5 +41,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript">
+      (function(w, d, x, id){
+        s=d.createElement('script');
+        s.src='https://dtn7rvxwwlhud.cloudfront.net/amazon-connect-chat-interface-client.js';
+        s.async=1;
+        s.id=id;
+        d.getElementsByTagName('head')[0].appendChild(s);
+        w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+      })(window, document, 'amazon_connect', 'c10050db-b1dd-4a9e-a22e-b7bb42fcacd7');
+      amazon_connect('styles', { openChat: { color: '#ffffff', backgroundColor: '#27866f'}, closeChat: { color: '#ffffff', backgroundColor: '#27866f'} });
+      amazon_connect('snippetId', 'QVFJREFIaUczMG9CY2pZeGVON3dIRFJwVkJlRHFKcW1kTTRlazcxajNHMVd5VzM1ZWdHYnFUNmM2NTY5L3hUNVcxaTlRc3lwQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNUmNrQTM5VXZCQVFwVUVYSEFnRVFnQ3Z2VGhEWFdyUys2ZElITVJMY2FrK0FIOFBEZ3ROZUJmUklFdGNhU2l5OTA0YmRYVWJkcUZXYk94Q2U6OjY2Wlh3MmkrTGFyS2FLVEM2REUvTkVPR25iWk1YQkwyS3lsUmM0bFVyZHpFcWRUMy8rS0ZCWndjVWM4QllodTd6Rkd4SWJwRXFNdVpoNlBGK1hrREloZnVlMkNDWlhCQXFlS2dKY2gvVlZJbGR0MmhvdEZJamJPeU1TSVlQc0lvenp3SU50czFKeFBRMDBFZlF6YmdjVHlCYnZkb2FlMD0=');
+      amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown' ]);
+    </script>
   </body>
 </html>

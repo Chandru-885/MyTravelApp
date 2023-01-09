@@ -78,8 +78,6 @@ function App(props) {
         <Route path="/userlogdetails" component={UserLogDetail}></Route>
         <Route path="/Admintourchart" component={Chart}></Route>
         <Route path="/Adminbookingdata" component={Booking}></Route>
-
-
       </Switch>
       <footer>
               <div className="row m-3">
@@ -94,11 +92,9 @@ function App(props) {
                         <p>FrontEnd : Netlify </p>
                         <p>BackEnd : Heroku</p>
                         <p>DataBase : Mongodb Atlas</p>
+                        <p> - by Chandru Lakshmanan</p>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-xl-4 col-ls">
-                        {/* <p>&copy; 2021 Developed by Chandru</p> */}
-                        <p><br></br><br></br><br></br></p>
-                        <p className="mt-4 pt-4"> -- by Chandru Lakshmanan</p>
                     </div>
                         
                 </div>
